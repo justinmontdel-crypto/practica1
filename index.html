@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de motos</title>
+    <link rel="stylesheet" href="scss/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/logo.png" alt="Logo de la compañia" class="header__logo-img">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <button class="header__btn header__btn--dark">Ver todas las motos</button>
+                </li>
+                <li class="header__nav-item">
+                    <button class="header__btn header__btn--user">Usuario</button>
+                </li>
+                <li class="header__nav-item">
+                    <button class="header__menu-toggle">
+                        <span class="header__hamburger-line"></span>
+                        <span class="header__hamburger-line"></span>
+                        <span class="header__hamburger-line"></span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="catalog-container">
+
+        <section class="catalog">
+            <h1 class="catalog__title">Todas las motos</h1>
+
+
+            <div class="catalog__filters">
+                <button class="filter-btn filter-btn--active">Eléctrica</button>
+                <button class="filter-btn filter-btn--active">Automática</button>
+                <button class="filter-btn">Gasolina</button>
+                <button class="filter-btn">Diesel</button>
+            </div>
+
+            <p class="catalog__results-count">8 resultados de motos eléctrica automática</p>
+
+            <div class="catalog__grid">
+
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="assets/moto.png" alt="Una moto deportiva KTM Duke Sport blanca y naranja"
+                            class="card__image">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Moto</h2>
+                        <div class="card__tags">
+                            <span class="tag">Eléctrica</span>
+                            <span class="tag">Automática</span>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__price card__price--promo">
+                                <img src="assets/Vector.png" alt="Icono de fuego" class="card__price-icon">
+                                Desde 5.000€ (con IVA)
+                            </p>
+                            <a href="#" class="card__link">Ver detalles</a>
+                        </div>
+                        <button class="card__button">Configurar esta moto</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="assets/moto.png" alt="Una moto deportiva KTM Duke Sport blanca y naranja"
+                            class="card__image">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Moto</h2>
+                        <div class="card__tags">
+                            <span class="tag">Eléctrica</span>
+                            <span class="tag">Automática</span>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__price">Desde 10.000€ <span class="card__tax">(con
+                                    IVA)</span></p>
+                            <a href="#" class="card__link">Ver detalles</a>
+                        </div>
+                        <button class="card__button">Configurar esta moto</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="assets/moto.png" alt="Una moto deportiva KTM Duke Sport blanca y naranja"
+                            class="card__image">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Moto</h2>
+                        <div class="card__tags">
+                            <span class="tag">Eléctrica</span>
+                            <span class="tag">Automática</span>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__price">Desde 10.000€ <span class="card__tax">(con
+                                    IVA)</span></p>
+                            <a href="#" class="card__link">Ver detalles</a>
+                        </div>
+                        <button class="card__button">Configurar esta moto</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="assets/moto.png" alt="Una moto deportiva KTM Duke Sport blanca y naranja"
+                            class="card__image">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Moto</h2>
+                        <div class="card__tags">
+                            <span class="tag">Eléctrica</span>
+                            <span class="tag">Automática</span>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__price">Desde 10.000€ <span class="card__tax">(con
+                                    IVA)</span></p>
+                            <a href="#" class="card__link">Ver detalles</a>
+                        </div>
+                        <button class="card__button">Configurar esta moto</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="assets/moto.png" alt="Una moto deportiva KTM Duke Sport blanca y naranja"
+                            class="card__image">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Moto</h2>
+                        <div class="card__tags">
+                            <span class="tag">Eléctrica</span>
+                            <span class="tag">Automática</span>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__price">Desde 10.000€ <span class="card__tax">(con
+                                    IVA)</span></p>
+                            <a href="#" class="card__link">Ver detalles</a>
+                        </div>
+                        <button class="card__button">Configurar esta moto</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="assets/moto.png" alt="Una moto deportiva KTM Duke Sport blanca y naranja"
+                            class="card__image">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Moto</h2>
+                        <div class="card__tags">
+                            <span class="tag">Eléctrica</span>
+                            <span class="tag">Automática</span>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__price">Desde 10.000€ <span class="card__tax">(con
+                                    IVA)</span></p>
+                            <a href="#" class="card__link">Ver detalles</a>
+                        </div>
+                        <button class="card__button">Configurar esta moto</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2 class="newsletter__title">¿Quieres estar informado de las novedades?</h2>
+            <form class="newsletter__form">
+                <div class="newsletter__field-group">
+                    <label for="newsletter-email" class="newsletter__label">Email</label>
+                    <input type="email" id="newsletter-email" class="newsletter__input" placeholder="nombre@gmail.com"
+                        required>
+                </div>
+                <button type="submit" class="newsletter__button">Suscríbete</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Contacto</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Política de privacidad</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Política de cookies</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Nota Legal</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Mapa de sitio</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Accesibilidad</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
