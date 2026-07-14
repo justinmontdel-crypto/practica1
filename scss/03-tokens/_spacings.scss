@@ -1,3 +1,5 @@
+@use '../02-tools/px-to-rem' as *;
+
 :root {
     --spacing-xs: pxToRem(4px);
     --spacing-sm: pxToRem(8px);
