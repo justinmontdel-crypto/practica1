@@ -1,9 +1,9 @@
 @use '../02-tools/px-to-rem' as *;
 
 :root {
-    --spacing-xs: pxToRem(4px);
-    --spacing-sm: pxToRem(8px);
-    --spacing-md: pxToRem(16px);
-    --spacing-lg: pxToRem(24px);
-    --spacing-xl: pxToRem(32px); 
+    --spacing-4: pxToRem(4px); //spacing xs
+    --spacing-8: pxToRem(8px); //spacing sm
+    --spacing-16: pxToRem(16px); //spacing md
+    --spacing-24: pxToRem(24px); //spacing lg
+    --spacing-32: pxToRem(32px); //spacing xl
 }
