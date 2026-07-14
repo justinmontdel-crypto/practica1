@@ -1,0 +1,9 @@
+@use '../02-tools/' as *;
+
+:root {
+    --font-size-h1: pxToRem(32px);
+    --font-size-h2: pxToRem(24px);
+    --font-size-body: pxToRem(16px);
+    --font-size-small: pxToRem(14px);
+    --font-primary: 'Arial', sans-serif;
+}
