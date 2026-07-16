@@ -1,0 +1,14 @@
+@use '../02-tools/px-to-rem' as *;
+
+   .filter-btn {
+       padding: pxToRem(6px) pxToRem(14px);
+       border: 1px solid var(--color-border);
+       background-color: var(--color-bg-main);
+       border-radius: pxToRem(4px);
+
+       &--active {
+           background-color: var(--color-bg-dark);
+           color: var(--color-text-btn);
+           border-color: var(--color-bg-dark);
+       }
+   }

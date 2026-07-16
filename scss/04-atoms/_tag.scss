@@ -1,0 +1,8 @@
+@use '../02-tools/px-to-rem' as *;
+
+.tag {
+    background-color: var(--color-bg-light);
+    padding: pxToRem(4px) pxToRem(8px);
+    font-size: var(--font-size-small);
+    color: var(--color-text-muted);
+}

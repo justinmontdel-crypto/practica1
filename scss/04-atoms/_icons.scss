@@ -1,0 +1,33 @@
+@use '../02-tools/px-to-rem' as *;
+
+@mixin icon-base($size: pxToRem(24px)) {
+    background-color: var(--icon-color);
+    height: $size;
+    width: $size;
+    min-width: $size;
+    display: inline-block;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    vertical-align: middle;
+}
+
+$icons: logo, fuego;
+
+@each $icon in $icons {
+    .icon--#{$icon} {
+        --icon-color: var(--color-icon);
+        @include icon-base;
+        mask-image: url(../assets/icons/#{$icon}.svg);
+    }
+}
+
+.icon--logo {
+    width: pxToRem(50px);
+    height: pxToRem(50px);
+    min-width: pxToRem(50px);
+}
+
+.icon--fuego {
+    --icon-color: var(--color-accent);  
+}
