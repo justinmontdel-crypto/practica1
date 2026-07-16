@@ -1,0 +1,89 @@
+@use '../02-tools/px-to-rem' as *;
+@use '../03-tokens/spacings' as *;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-border-card);
+    background: var(--color-bg-main);
+}
+
+.card__image-wrapper {
+    width: 100%;
+    position: relative;
+    height: pxToRem(280px);
+    background-color: var(--color-bg-light);
+    overflow: hidden;
+}
+
+.card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__content {
+    padding: pxToRem(20px) pxToRem(15px);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card__title {
+    font-size: var(--font-size-h2);
+    margin-bottom: $spacing-8;
+}
+
+.card__tags {
+    display: flex;
+    gap: $spacing-8;
+    margin-bottom: $spacing-16;
+}
+
+.card__price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: auto;
+    margin-bottom: $spacing-16;
+}
+
+.card__price {
+    font-size: var(--font-size-small);
+    color: var(--color-text-dark);
+    display: flex;
+    align-items: center;
+    gap: $spacing-4;
+}
+
+.card__price--promo {
+    color: var(--color-accent);
+}
+
+.card__tax {
+    font-weight: normal;
+    font-size: var(--font-size-small);
+    color: var(--color-text-muted);
+}
+
+.card__link {
+    font-size: var(--font-size-small);
+    color: var(--color-link);
+    text-decoration: underline;
+}
+
+.card__button {
+    width: 100%;
+    padding: pxToRem(12px);
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-btn);
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.card__button:hover {
+    background-color: var(--color-hover);
+}
