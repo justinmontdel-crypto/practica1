@@ -1,6 +1,13 @@
-   @use '01-external-reset' as *;
-   @use '02-tools' as *;
-   @use '03-tokens' as *;
-   @use '04-atoms' as *;
-   @use '05-molecules' as *;
-   @use '06-pages' as *;
+@use '01-external-reset' as *;
+@use '02-tools' as *;
+@use '03-tokens' as tokens;
+@use '04-atoms' as *;
+@use '05-molecules' as *;
+@use '06-organisms' as *;
+@use '07-pages' as *;
+
+:root {
+   @include tokens.colors;
+   @include tokens.fonts;
+   @include tokens.borders;
+}
