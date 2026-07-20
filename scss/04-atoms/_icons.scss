@@ -12,20 +12,26 @@
     vertical-align: middle;
 }
 
-$icons: logo, fuego;
+$icons: logo, fuego, user;
 
 @each $icon in $icons {
     .icon--#{$icon} {
         --icon-color: var(--color-icon);
         @include icon-base;
-        mask-image: url(../assets/icons/#{$icon}.svg);
+        mask-image: url("../assets/icons/#{$icon}.svg");
     }
 }
 
 .icon--logo {
-    width: pxToRem(50px);
-    height: pxToRem(50px);
+    width: pxToRem(70px);
+    height: pxToRem(48px);
     min-width: pxToRem(50px);
+}
+
+.icon--user {
+    width: pxToRem(20px);
+    height: pxToRem(20px);
+    min-width: pxToRem(20px);
 }
 
 .icon--fuego {
