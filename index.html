@@ -19,7 +19,8 @@
                     <button class="header__btn header__btn--dark">Ver todas las motos</button>
                 </li>
                 <li class="header__nav-item">
-                    <button class="header__btn header__btn--user">Usuario</button>
+                    <button class="header__btn header__btn--user">
+                        <span class="icon--user" aria-label="Icono de usuario" role="img"></span>Usuario</button>
                 </li>
                 <li class="header__nav-item">
                     <button class="header__menu-toggle">
@@ -45,17 +46,16 @@
                 <button class="filter-btn">Diesel</button>
             </div>
 
-            <p class="catalog__results-count">8 resultados de motos eléctrica automática</p>
+            <h2 class="catalog__results-count">8 resultados de motos eléctrica automática</h2>
 
             <div class="catalog__grid">
 
                 <article class="card">
                     <div class="card__image-wrapper">
-                        <img src="assets/moto.png" alt="Una moto deportiva blanca y naranja"
-                            class="card__image">
+                        <img src="assets/moto.png" alt="Una moto deportiva blanca y naranja" class="card__image">
                     </div>
                     <div class="card__content">
-                        <h2 class="card__title">Moto</h2>
+                        <h3 class="card__title">Moto</h3>
                         <div class="card__tags">
                             <span class="tag">Eléctrica</span>
                             <span class="tag">Automática</span>
@@ -76,7 +76,7 @@
                         <img src="assets/moto.png" alt="Una moto deportiva blanca y naranja" class="card__image">
                     </div>
                     <div class="card__content">
-                        <h2 class="card__title">Moto</h2>
+                        <h3 class="card__title">Moto</h3>
                         <div class="card__tags">
                             <span class="tag">Eléctrica</span>
                             <span class="tag">Automática</span>
@@ -95,7 +95,7 @@
                         <img src="assets/moto.png" alt="Una moto deportiva blanca y naranja" class="card__image">
                     </div>
                     <div class="card__content">
-                        <h2 class="card__title">Moto</h2>
+                        <h3 class="card__title">Moto</h3>
                         <div class="card__tags">
                             <span class="tag">Eléctrica</span>
                             <span class="tag">Automática</span>
@@ -114,7 +114,7 @@
                         <img src="assets/moto.png" alt="Una moto deportiva blanca y naranja" class="card__image">
                     </div>
                     <div class="card__content">
-                        <h2 class="card__title">Moto</h2>
+                        <h3 class="card__title">Moto</h3>
                         <div class="card__tags">
                             <span class="tag">Eléctrica</span>
                             <span class="tag">Automática</span>
@@ -133,7 +133,7 @@
                         <img src="assets/moto.png" alt="Una moto deportiva blanca y naranja" class="card__image">
                     </div>
                     <div class="card__content">
-                        <h2 class="card__title">Moto</h2>
+                        <h3 class="card__title">Moto</h3>
                         <div class="card__tags">
                             <span class="tag">Eléctrica</span>
                             <span class="tag">Automática</span>
@@ -152,7 +152,7 @@
                         <img src="assets/moto.png" alt="Una moto deportiva blanca y naranja" class="card__image">
                     </div>
                     <div class="card__content">
-                        <h2 class="card__title">Moto</h2>
+                        <h3 class="card__title">Moto</h3>
                         <div class="card__tags">
                             <span class="tag">Eléctrica</span>
                             <span class="tag">Automática</span>
@@ -168,20 +168,19 @@
 
             </div>
         </section>
-
-        <section class="newsletter">
-            <h2 class="newsletter__title">¿Quieres estar informado de las novedades?</h2>
-            <form class="newsletter__form">
-                <div class="newsletter__field-group">
-                    <label for="newsletter-email" class="newsletter__label">Email</label>
-                    <input type="email" id="newsletter-email" class="newsletter__input" placeholder="nombre@gmail.com"
-                        required>
-                </div>
-                <button type="submit" class="newsletter__button">Suscríbete</button>
-            </form>
-        </section>
-
     </main>
+
+    <section class="newsletter">
+        <h2 class="newsletter__title">¿Quieres estar informado de las novedades?</h2>
+        <form class="newsletter__form">
+            <div class="newsletter__field-group">
+                <label for="newsletter-email" class="newsletter__label">Email</label>
+                <input type="email" id="newsletter-email" class="newsletter__input" placeholder="nombre@gmail.com"
+                    required>
+            </div>
+            <button type="submit" class="newsletter__button">Suscríbete</button>
+        </form>
+    </section>
 
     <footer class="footer">
         <ul class="footer__list">
