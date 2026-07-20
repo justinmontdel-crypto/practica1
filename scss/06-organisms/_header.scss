@@ -1,0 +1,74 @@
+@use '../02-tools' as *;
+@use '../03-tokens' as *;
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: pxToRem(15px) pxToRem(40px);
+    border-bottom: pxToRem(1px) solid var(--color-border);
+    width: 100%;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: pxToRem(24px);
+}
+
+.header__btn {
+    display: none;
+    padding: pxToRem(8px) pxToRem(16px);
+    border: pxToRem(1px) solid var(--color-border);
+    border-radius: $spacing-4;
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-14);
+}
+
+.header__btn--dark {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-btn);
+    border: none;
+}
+
+.header__btn--user {
+    background: transparent;
+    border: none;
+    font-weight: normal;
+    color: var(--color-text-dark);
+}
+
+.header__menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: pxToRem(24px);
+    height: pxToRem(18px);
+    margin-left: pxToRem(5px);
+}
+
+.header__hamburger-line {
+    display: block;
+    width: 100%;
+    height: pxToRem(2px);
+    background-color: var(--color-bg-dark);
+    border-radius: pxToRem(2px);
+}
+
+@include tablet {
+    .header__btn {
+        display: flex;
+        align-items: center;
+        gap: pxToRem(8px);
+    }
+
+    .header__menu-toggle {
+        display: none;
+    }
+}

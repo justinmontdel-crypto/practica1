@@ -1,0 +1,50 @@
+@use '../02-tools/' as *;
+@use '../03-tokens' as *;
+
+
+.catalog-container {
+    padding: pxToRem(48px) pxToRem(40px);
+}
+
+.catalog {
+    padding-bottom: pxToRem(24px);
+}
+
+.catalog__title {
+    font-size: pxToRem(38px);
+    font-weight: var(--font-weight-700);
+    margin-bottom: pxToRem(24px);
+    color: var(--color-text-dark);
+}
+
+.catalog__filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: pxToRem(12px);
+    margin-bottom: pxToRem(32px);
+}
+
+.catalog__results-count {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-700);
+    color: var(--color-text-dark);
+    margin-bottom: pxToRem(24px);
+}
+
+.catalog__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: pxToRem(32px);
+}
+
+@include tablet {
+    .catalog__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include desktop {
+    .catalog__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
