@@ -1,0 +1,9 @@
+@use '../02-tools/px-to-rem' as *;
+
+@mixin borders {
+    --radius-4: #{pxToRem(4px)};
+    --radius-8: #{pxToRem(8px)};
+
+    --border-btn-dark: #{pxToRem(1px)} solid var(--color-border-dark);
+    
+}

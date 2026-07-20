@@ -1,9 +1,13 @@
 @use '../02-tools/' as *;
 
-:root {
-    --font-size-h1: pxToRem(32px);
-    --font-size-h2: pxToRem(24px);
-    --font-size-body: pxToRem(16px);
-    --font-size-small: pxToRem(14px);
+@mixin fonts {
+    --font-size-h1: #{pxToRem(40px)};
+    --font-size-h2: #{pxToRem(28px)};
+    --font-size-h3: #{pxToRem(24px)};
+    --font-size-body: #{pxToRem(16px)};
+    --font-size-14: #{pxToRem(14px)};
+
     --font-primary: 'Arial', sans-serif;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
 }
